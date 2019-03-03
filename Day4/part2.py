@@ -24,14 +24,14 @@ for line in chronological:
             for i in range(int(start_t), int(line[1][3:5])):
                 timetable[guard_id][int(str(i)[0]) + 1 if i > 10 else 1][(int(str(i)[1]) % 10) if i > 9 else int(str(i)[0])] += 1
 
-most_id = max(timetable, key=lambda x: timetable[x][0])
-amount_min = max([max(ten) for ten in timetable[most_id][1:]])
-for i, ten in enumerate(timetable[most_id][1:]):
+
+max_pair = max(([max([max(ten) for ten in timetable[k][1:]]), k] for k in timetable), key=lambda x: x[0])
+
+for i, ten in enumerate(timetable[max_pair[1]][1:]):
     try:
-        minute = i * 10 + ten.index(amount_min)
+        minute = i * 10 + ten.index(max_pair[0])
         break
     except:
         pass
 
-print(len(timetable))
-print(most_id, minute,most_id * minute)
+print(max_pair, minute, max_pair[1] * minute)
