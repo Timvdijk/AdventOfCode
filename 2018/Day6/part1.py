@@ -1,4 +1,4 @@
-with open("Day6/input.txt") as file:
+with open("input.txt") as file:
     points = []
     x = set()
     y = set()

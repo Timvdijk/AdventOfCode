@@ -1,5 +1,5 @@
 
-with open("Day2/input.txt") as file:
+with open("input.txt") as file:
     lines = file.readlines()
     for i, line in enumerate(lines):
         for other in lines[i + 1:]:

@@ -3,7 +3,7 @@ import time
 t = time.time()
 two = 0
 three = 0
-with open("Day2/input.txt") as file:
+with open("input.txt") as file:
     for line in file.readlines():
         chars = dict()
         for char in line:

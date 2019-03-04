@@ -1,4 +1,4 @@
-with open("Day5/input.txt") as file:
+with open("input.txt") as file:
     string = file.readline().strip()
 
 changes = True

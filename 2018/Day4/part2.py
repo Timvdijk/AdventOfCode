@@ -1,5 +1,5 @@
 
-with open("Day4/input.txt") as file:
+with open("input.txt") as file:
     chronological = sorted(file, key=lambda s: s[6:17])
 
 timetable = dict()

@@ -1,5 +1,5 @@
 requirements = dict()
-with open("Day7/input.txt") as file:
+with open("input.txt") as file:
     for line in file:
         line = line.strip()
 
@@ -8,7 +8,7 @@ with open("Day7/input.txt") as file:
         except:
             requirements[line[36]] = set(line[5])
 
-with open("Day7/input.txt") as file:
+with open("input.txt") as file:
     for line in file:
         letter = line.strip()[5]
 

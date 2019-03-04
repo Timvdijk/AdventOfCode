@@ -1,4 +1,4 @@
-with open("Day8/input.txt") as file:
+with open("input.txt") as file:
     line = [int(i) for i in file.readline().strip().split(' ')]
 
 queue = [[line[0], line[1]]]
