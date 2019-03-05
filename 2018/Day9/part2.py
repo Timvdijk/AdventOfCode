@@ -1,8 +1,9 @@
 from collections import deque
+
 with open("input.txt") as file:
     line = file.read().strip().split(' ')
 
-max_players, max_points = int(line[0]), int(line[-2] * 100)
+max_players, max_points = int(line[0]), int(line[-2]) * 100
 
 marbles = deque([0])
 current = 0
